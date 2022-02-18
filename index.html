@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="topBlob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#F55555"
+            d="M56.5,-56.4C67.9,-45,68.4,-22.5,68.6,0.1C68.7,22.8,68.5,45.5,57,57.9C45.5,70.3,22.8,72.3,0.9,71.4C-21,70.6,-42,66.8,-57.1,54.4C-72.2,42,-81.3,21,-77.6,3.7C-73.9,-13.5,-57.2,-27,-42.1,-38.4C-27,-49.8,-13.5,-59.1,4.5,-63.6C22.5,-68.1,45,-67.8,56.5,-56.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+
+      <div class="bottomBlob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#006BA8"
+            d="M56.5,-56.4C67.9,-45,68.4,-22.5,68.6,0.1C68.7,22.8,68.5,45.5,57,57.9C45.5,70.3,22.8,72.3,0.9,71.4C-21,70.6,-42,66.8,-57.1,54.4C-72.2,42,-81.3,21,-77.6,3.7C-73.9,-13.5,-57.2,-27,-42.1,-38.4C-27,-49.8,-13.5,-59.1,4.5,-63.6C22.5,-68.1,45,-67.8,56.5,-56.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+
+      <div class="container">
+        <form id="form" class="form">
+          <h2>Register With Us</h2>
+
+          <div class="form-control">
+            <label for="username"> Username</label>
+            <input type="text" id="username" placeholder="Enter username" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email"> Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password"> Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password2">Confirm password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Enter password again"
+            />
+            <small>Error message</small>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

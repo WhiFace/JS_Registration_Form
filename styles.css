@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&family=Playfair+Display:wght@700;900&display=swap');
+
+:root{
+    --success-color:#2ecc71;
+    --error-color:#ff1717;
+    --accent-color: #006ba8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+body{
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans',  sans-serif;
+    position: relative;
+   
+}
+
+.container{
+width: 400px;
+background: rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent-color) ;
+
+}
+
+form{
+    padding: 30px 40px;
+}
+
+.wrapper{
+    position: relative;
+}
+  .container .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+ .form-control label{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ .form-control input {
+    border:  2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: rgba(204, 203, 203, 0.815);
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+ .form-control.error input{
+    border-color: var(--error-color);
+}
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+ .form-control.error small{
+    visibility: visible;
+}
+
+ .form button{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    color: rgb(214, 212, 212);
+    opacity: 1;
+}
+:-ms-input-placeholder{
+    color: rgb(214, 212, 212);
+}
+
+.topBlob{
+    width: 500px;
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    
+}
+
+.bottomBlob{
+    width: 500px;
+    position: absolute;
+    bottom: -180px;
+    left: -150px;
+}
+
